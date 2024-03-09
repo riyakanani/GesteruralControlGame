@@ -102,7 +102,17 @@ namespace Mediapipe.Unity.HandTracking
 
     private void OnHandLandmarksOutput(object stream, OutputEventArgs<List<NormalizedLandmarkList>> eventArgs)
     {
-      _handLandmarksAnnotationController.DrawLater(eventArgs.value);
+      // _handLandmarksAnnotationController.DrawLater(eventArgs.value);
+      if (eventArgs.value != null) {
+        Genesis.gen.pos[0].x = (float)eventArgs.value[0].Landmark[4].X;
+        Genesis.gen.pos[0].y = (float)eventArgs.value[0].Landmark[4].Y;
+
+        Genesis.gen.pos[1].x = (float)eventArgs.value[0].Landmark[8].X;
+        Genesis.gen.pos[1].y = (float)eventArgs.value[0].Landmark[8].Y;
+
+      } else {
+        Genesis.gen.pos[0].x = -1f;
+      }
     }
 
     private void OnHandRectsFromLandmarksOutput(object stream, OutputEventArgs<List<NormalizedRect>> eventArgs)
