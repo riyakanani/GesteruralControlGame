@@ -3,7 +3,7 @@
 
 <h3> How to use </h3>
 <p> - The game scene is located in: Assets/MediaPipeUnity/Samples/Scenes/Hand Tracking </p>
-<p> - A detailed setup and usage tutorial can be found [here] (https://docs.google.com/document/d/1xZUi6wgtHe7gNXyvabZyk1M_NbhicoJHUrs2kmHQInA/edit?usp=sharing)</p>
+<p> - A detailed setup and usage tutorial can be found <a href="https://docs.google.com/document/d/1xZUi6wgtHe7gNXyvabZyk1M_NbhicoJHUrs2kmHQInA/edit?usp=sharing">here</a>.</p>
 
 <h3>My Contributions </h3>
 <h5>1. Genesis Script: </h5>
